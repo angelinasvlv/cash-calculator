@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bill Calculator</h2>
+        <form id="billForm">
+            <div class="form-group">
+                <label for="oneDollar">How many $1 bills do you have?</label>
+                <input type="number" id="oneDollar" name="oneDollar" value="0">
+            </div>
+            <div class="form-group">
+                <label for="fiveDollar">How many $5 bills do you have?</label>
+                <input type="number" id="fiveDollar" name="fiveDollar" value="0">
+            </div>
+            <div class="form-group">
+                <label for="tenDollar">How many $10 bills do you have?</label>
+                <input type="number" id="tenDollar" name="tenDollar" value="0">
+            </div>
+            <div class="form-group">
+                <label for="twentyDollar">How many $20 bills do you have?</label>
+                <input type="number" id="twentyDollar" name="twentyDollar" value="0">
+            </div>
+            <div class="form-group">
+                <label for="fiftyDollar">How many $50 bills do you have?</label>
+                <input type="number" id="fiftyDollar" name="fiftyDollar" value="0">
+            </div>
+            <div class="form-group">
+                <label for="hundredDollar">How many $100 bills do you have?</label>
+                <input type="number" id="hundredDollar" name="hundredDollar" value="0">
+            </div>
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        </form>
+        <div id="totalValue">Total value: $<span id="total">0</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
